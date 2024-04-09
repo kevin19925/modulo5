@@ -1,4 +1,4 @@
-from r6 import Auto
+from modulo5.retos.reto6.r6 import Auto
 
 auto1 = Auto("marca1", "1", "2020", 20)
 auto2 = Auto("marca2", "1", "2020", 10)  
