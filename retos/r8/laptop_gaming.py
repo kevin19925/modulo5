@@ -4,6 +4,8 @@ class Laptop_Gaming (Laptop):
     def __init__(self, marca, procesador, memoria, tarjeta_garfica ,costo=500, impuesto=0):
         super().__init__(marca, procesador, memoria, costo, impuesto)
         self.tarjeta_grafica=tarjeta_garfica
+    def __str__(self):
+        return f"Marca: {self.marca} \nProcesador: {self.procesador} \nMemoria: {self.memoria} \nTarjeta Gráfica: {self.tarjeta_grafica} \nPrecio: {self.costo}\n ------------------------------------------ \n"
 
     def realizar_diagnostico_sistema(self):
         resultado_dianostico=super().realizar_diagnostico_sistema()

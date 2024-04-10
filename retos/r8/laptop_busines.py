@@ -5,7 +5,9 @@ class Laptop_Business(Laptop):
         super().__init__(marca, procesador, memoria, costo, impuesto)
         self.disco = disco
         self.duracion_baterria=duracion_bateria
-    
+    def __str__(self):
+        return f"Marca: {self.marca} \nProcesador: {self.procesador} \nMemoria: {self.memoria} \ndisco: {self.disco}  \nbateria: {self.duracion_baterria}  \nPrecio: {self.costo}\n ------------------------------------------ \n"
+
     def realizar_diagnostico_sistema(self):
         resultado_dianostico=super().realizar_diagnostico_sistema()
         resultado_conectividad=self.verificar_conectividad_red()
